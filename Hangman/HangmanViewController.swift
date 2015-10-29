@@ -10,6 +10,15 @@ import UIKit
 
 class HangmanViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var guessField: UITextField!
+    @IBOutlet weak var guessButton: UIButton!
+    @IBOutlet weak var guessBox: UILabel!
+    @IBOutlet weak var newGame: UIButton!
+    
+    var nGame: Hangman!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,5 +28,7 @@ class HangmanViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 }
 
